@@ -11,6 +11,12 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- link font awesome -->
+<script src="https://kit.fontawesome.com/10cdc8742d.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="w-4/5 m-auto">
 
@@ -131,7 +137,7 @@
  
 
     <div>
-        <button class="bg-lime-400 p-5 font-bold text-xl text-white">8 Seats Left</button>
+        <button class="bg-lime-400 p-5 font-bold text-xl text-white"><span id="seatNumbers">10</span> Seats Left</button>
     </div>
 </section>
     
@@ -193,42 +199,107 @@
         <div><p>Selected</p></div>    
     </div>
 </div>
+</div>
 
 <!-- seats part -->
 
-<div class=" flex justify-between bg-white mt-10">
+<div class="flex  space-x-10">
+<div class="w-4/5 flex justify-between bg-white mt-10">
 <div class="grid grid-cols-2  space-x-6 space-y-4 mt-10">
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg col-span-2 mt-4">Enter and Exit</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-5">A1</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg ">A2</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B1</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B2</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C1</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C2</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D1</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D2</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E1</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E2</button>
+    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg col-span-2 mt-4 " disabled>Enter and Exit</button>
+    <p class="seatTitles hidden">A1</p>
+    <button class="seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-5">A1</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg ">A2</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B1</button>
+    
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B2</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C1</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C2</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D1</button>
+    <button class="seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D2</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E1</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E2</button>
     
 </div>
 <div class="grid grid-cols-2 space-x-6 space-y-4 ">
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg col-span-2 mt-4">Steering</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg my-4">A3</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">A4</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B3</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B4</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C3</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C4</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D3</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D4</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E3</button>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E4</button>
+    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg col-span-2 mt-4"disabled>Steering</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg my-4">A3</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">A4</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B3</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">B4</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C3</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">C4</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D3</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">D4</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E3</button>
+    <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E4</button>
 </div>
 </div>
+
+
+
+<div class= "w-3/4 mb-4">
+          
+  <div class="md:flex lg:col-span-1 mt-32">
+    <div>
+      <div class="bg-white p-6 rounded-md">
+        <h3 class="text-xl font-bold py-4">Have coupon?</h3>
+        <div class="join">
+          <input
+            id="input-field"
+            class="input input-bordered join-item w-40"
+            placeholder="Discount"
+          />
+          <button
+            id="apply-btn"
+            class="btn join-item rounded-md bg-[#1DD100] text-white font-bold"
+          >
+            Apply
+          </button>
+        </div>
+      </div>
+      <div class="my-8 p-4 bg-white rounded-md">
+        <div id="title-container">
+
+
+
+          
+        </div>
+        <hr class="my-2" />
+        <p class="text-xl font-bold py-2">
+          Total Price: <span id="totalPrice">0</span>
+        Taka</p>
+
+        <p class="text-xl font-bold py-2">
+          Discount: <span id="discountPrice">0</span> Taka
+        </p>
+        <p class="text-xl font-bold pb-2">
+          Total: <span id="total">0</span>Taka
+        </p>
+        <hr class="" />
+        <button class="btn btn-wide bg-[#1DD100] text-white">
+          Make Purchase
+        </button>
+      </div>
+    </div>
+  </div>
+
+    
+        <p class="p-4">Passenger Name*</p>
+        <input type="text"  placeholder="Enter Your Name" class="p-4  rounded-xl w-3/4">
+        <p class="p-4">Phone Number*</p>
+        <input type="text" placeholder="Enter Your Number" class="p-4  rounded-xl w-3/4">
+        <p class="p-4">Email Id</p>
+        <input type="email" placeholder="Enter Your Email" class="p-4  rounded-xl w-3/4">
+      </div>
+   
+</div>
+
+</div>
+
 </div>
 
 
- 
 
 
 
@@ -240,13 +311,30 @@
 
 
 
+<footer>
+  <div class="foot1">
+      <div class="footdiv11"><p>Fastlane_Paribahan </p><br>Now book Your ticket online and faster.Enjoy your ride comfortably<p></p></div>
 
-
-
+      <div class="footdiv12">
+          
+          <i class="fa-solid fa-phone"></i>  +00 123 584  <br>
+        
+          <i class="fa-brands fa-internet-explorer">Fastlane_Paribahan.com</i>
+      </p></div>
+  </div>
+<hr>
+<div class="sociaLink">
+  
+  <img src="images/playstore.png" alt="">
+  <p class="copyright">Get it on <br>Google Play</p>
+</div>
+<hr>
+<div class="LastPart">
+<div><p class="copyright">2017, All Rights Reserved. &copy;</p></div>
 
 </div>
+</footer>
 
-
- 
+ <script src="./style.js"></script>
 </body>
 </html>

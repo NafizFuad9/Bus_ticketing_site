@@ -8,3 +8,45 @@
 .seats button{
  padding: 8px;
 }
+
+
+
+
+
+
+
+
+/* footer style section */
+footer{background: #070211;
+    padding: 150px;
+    justify-content: space-around;}
+    
+    .foot1{display: flex;
+    justify-items: auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-justify: auto;}
+    
+    .sociaLink{display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;}
+    
+    footer img {margin-left: 20px;
+    padding: 20px;
+    align-items: center;}
+    
+    .footdiv11,.footdiv12{color: #FFF;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+    align-self: auto;
+    justify-content: center;}
+    
+    .LastPart{display: flex;
+    justify-content: space-between}
+    .copyright{color: #FFF;
+    font-size: 24px;
+    font-weight: 500;}
+    
+    
