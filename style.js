@@ -41,6 +41,8 @@ for (let index = 0; index < btns.length; index++) {
         element.style.backgroundColor = "lime";
 
         selectedSeats.push(element);
+        
+
 
         if (selectedSeats.length === 4) {
             btns.forEach(btn => {
@@ -49,7 +51,14 @@ for (let index = 0; index < btns.length; index++) {
                 }
             });
         }
-
+        
+        const purchaseBtn = document.getElementById("purchaseButton");
+       
+        if (seatCount > 0 ) {
+            purchaseBtn.disabled = false;
+        } else {
+            purchaseBtn.disabled = true;
+        }
         
         const remainingSeats = totalSeats - seatCount + 1;
         seatNumbersElement.innerText = ` Seats: ${remainingSeats}`;
