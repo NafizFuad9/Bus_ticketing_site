@@ -58,7 +58,7 @@
           </div>
     </head>
 
-    <section class="banner justify-items-center items-center text-center border-4 border-red-300">
+    <section class="banner justify-items-center items-center text-center ">
         <h1 class="text-6xl text-center pt-16 font-bold text-white">End-to-End Travel <br> with <br><span class="text-[#1DD100]">Fastlane Paribahan</span></h1>
         <p class="text-white text-center text-xl p-4">Experience unparalleled speed and efficiency with our Fast Lane Bus Service, where seamless journeys and swift connectivity redefine your travel experience. </p>
 
@@ -137,7 +137,7 @@
  
 
     <div>
-        <button class="bg-lime-400 p-5 font-bold text-xl text-white"><span id="seatNumbers">10</span> Seats Left</button>
+        <button class="bg-lime-400 p-5 font-bold text-xl text-white"><span id="seatNumbers">16</span> Seats Left</button>
     </div>
 </section>
     
@@ -205,7 +205,7 @@
 
 <div class="flex  space-x-10">
 <div class="w-4/5 flex justify-between bg-white mt-10">
-<div class="grid grid-cols-2  space-x-6 space-y-4 mt-10">
+<div class="grid grid-cols-2  space-x-6 space-y-4 mt-10 pl-6">
     <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg col-span-2 mt-4 " disabled>Enter and Exit</button>
     <p class="seatTitles hidden">A1</p>
     <button class="seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-5">A1</button>
@@ -221,7 +221,7 @@
     <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">E2</button>
     
 </div>
-<div class="grid grid-cols-2 space-x-6 space-y-4 ">
+<div class="grid grid-cols-2 space-x-6 space-y-4 pr-6 ">
     <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg col-span-2 mt-4"disabled>Steering</button>
     <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg my-4">A3</button>
     <button class=" seatButton btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">A4</button>
@@ -242,8 +242,8 @@
           
   <div class="md:flex lg:col-span-1 mt-32">
     <div>
-      <div class="bg-white p-6 rounded-md">
-        <h3 class="text-xl font-bold py-4">Have coupon?</h3>
+      <div id="discountPart"  class="p-6 rounded-md" >
+        <h3 class="  text-xl font-bold py-4">Have coupon?</h3>
         <div class="join">
           <input
             id="input-field"
@@ -252,7 +252,7 @@
           />
           <button
             id="apply-btn"
-            class="btn join-item rounded-md bg-[#1DD100] text-white font-bold"
+            class="btn join-item   rounded-md bg-[#1DD100] text-white font-bold"
           >
             Apply
           </button>
@@ -271,10 +271,10 @@
         Taka</p>
 
         <p class="text-xl font-bold py-2">
-          Discount: <span id="discountPrice">0</span> Taka
+          Discount: <span id="discountPrice">0</span> 
         </p>
         <p class="text-xl font-bold pb-2">
-          Total: <span id="total">0</span>Taka
+          Grand Total: <span id="total">0</span>Taka
         </p>
         <hr class="" />
         <button class="btn btn-wide bg-[#1DD100] text-white">
